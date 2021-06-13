@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js?fbclid=IwAR1Vp_anB_Sc8rVLPCWTNNGix6Ec_qx_qDP2iYomJuLOw1Eb6o9mIPq1eTQ"></script>    
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    
+
+    <style>
+
+        h2.nicespace
+        {
+            margin: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <h1>bai tap Javascript</h1>
+            <!--BAI 1-->
+            <h2>Bài tập số 1:</h2>
+        <p id = "text">My First Javascript App</p>
+        <p>
+            Input Size: <input type = "text" name = "size" id = "size">
+            <br>
+            Input Color: <input type = "text" name = "color" id = "color">
+        </p>    
+        <div>
+            <!--camel case-->
+            <button id = "btnChangeColorFontSize"
+            onclick = "clickHereToChangeColorSize()" style="height: 50px; width: 50px;">click</button>
+        </div>
+
+    </div> 
+    
+    <div>
+    <!--BAI 2-->
+            <h2>Bài tập số 2:</h2>
+            <form id = "form1" onsubmit = "showInfo()">
+                <h1>First Name:</h1><input type = "text" id = "fname" name="fname">
+                <br>
+                <h1>Last Name:</h1><input type = "text" id = "lname" name="lname">
+                <br>
+                <input type = "submit" value = "Gửi thông tin">
+
+               
+            </form>
+
+            <div id = "dia" title = "bảng hiển thị">
+
+            </div>
+            
+    </div>
+    
+    <div>
+            <!--BAI 3-->
+            <h3>Bài tập số 3:</h3>
+            <div id="content" style="padding: 20px; background:white; color:black; margin: 40px 0px;">
+                CHÀO MỪNG BẠN ĐẾN VỚI LẬP TRÌNH WEB
+            </div>
+            <input type="button" id="btn1" value="Đổi Backgroud màu đỏ"/>
+            <input type="button" id="btn2" value="Đổi Backgroud màu xanh"/>
+            <div>
+                <!--camel case-->
+                <button id = "btnChangeColorBarkgroud" onclick = "clickHereToChangeColorBarkgroud()">Click</button>
+            </div>
+    </div>        
+
+
+
+
+    <div>
+        <h2 class="nicespace">Bài 4</h2>
+        <p>
+            <a id="somelink" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="https://www.google.com/">
+                Google Website
+            </a>
+            <button onclick="getAttributes()">Click here to get attributes value</button>
+
+        </p>
+
+        <div id="dialog" title="Bảng hiển thị">
+
+        </div>
+    </div>
+
+    <div>
+        <h2 class="nicespace">Bài 5</h2>
+        <table id="sampleTable" border="1">
+            <tbody>
+                <tr>
+                    <td>Row 1 cell 1</td>
+                    <td>Row 2 cell 2</td>
+                </tr>
+            
+
+            
+                <tr>
+                    <td>Row 2 cell 1</td>
+                    <td>Row 2 cell 2</td>
+                </tr>
+            </tbody>
+
+        </table><br>
+        <input type="button" onclick="insert_Row()" value="Insert row">
+
+        <div id="dialog" title="Bảng hiển thị">
+
+        </div>
+
+    </div>
+
+
+    <div>
+        <h2 class="nicespace">Bài 6</h2>
+        
+
+        <table id="myTable" border="1">
+            <tbody>
+                <tr>
+                    <td>Row 1 cell 1</td>
+                    <td>Row 2 cell 2</td>
+                </tr>
+            
+
+            
+                <tr>
+                    <td>Row 2 cell 1</td>
+                    <td>Row 2 cell 2</td>
+                </tr>
+            </tbody>
+
+        </table><br>
+        <form>
+            <input type="button" onclick="change_Content()" value="Change content">
+        </form>
+       
+
+
+        <div id="dialog" title="Bảng hiển thị">
+
+        </div>
+
+    </div>
+
+
+    <div>
+        <h2 class="nicespace">Bài 7</h2>
+        
+
+        <table id="myTable1" border="1">
+            <tbody>
+                <tr>
+                    <td>Row 1 cell 1</td>
+                    <td>Row 2 cell 2</td>
+                </tr>
+            
+
+            
+                <tr>
+                    <td>Row 2 cell 1</td>
+                    <td>Row 2 cell 2</td>
+                </tr>
+            </tbody>
+
+        </table><br>
+        <form>
+            <input type="button" onclick="createTable(1, 0)" value="Create the table">
+        </form>
+       
+
+
+        <div id="dialog" title="Bảng hiển thị">
+
+        </div>
+
+    </div>
+       
+    
+    <div>
+        <h2 class="nicespace">Bài 8</h2>
+        <form>
+            <select id="ColorSelect">
+                <option>Red</option>
+                <option>Green</option>
+                <option>White</option>
+                <option>Black</option>
+            </select>
+            <input type="button" onclick="RemoveColor()" value="Select and Remove">
+            <br>
+        </form>
+    </div>
+
+
+
+</body>
+</html>
